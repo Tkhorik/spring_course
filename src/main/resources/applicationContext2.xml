@@ -6,6 +6,8 @@
 
     <bean id="myLovelyPey2"
           class="com.example.spring_course.Cat"
-          scope="prototype">
+          scope="prototype"> <!--Scope prototype means that
+every time you ask spring (getBean or dependency injection)
+for an instance it will create a new instance and give a reference to that.-->
     </bean>
 </beans>
