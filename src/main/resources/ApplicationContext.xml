@@ -6,7 +6,7 @@
 
 
     <bean id="myLovelyPey"
-          class="com.example.spring_course.Dog">
+          class="com.example.spring_course.Cat">
     </bean>
 
     <!-- id -  bean indificator
