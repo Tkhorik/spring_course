@@ -15,6 +15,8 @@
     <bean id="myPerson"
           class="com.example.spring_course.Person">
         <property name="pet" ref="myLovelyPey"/>
+        <property name="surname" value="White"/>
+        <property name="age" value="33"/>
 
     </bean>
 
