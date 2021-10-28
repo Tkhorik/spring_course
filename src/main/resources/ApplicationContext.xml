@@ -6,6 +6,7 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:property-placeholder location="classpath:myApp.properties"/>
+    <context:property-placeholder location="classpath:application.properties"/>
 
     <bean id="myLovelyPey"
           class="com.example.spring_course.Cat">
