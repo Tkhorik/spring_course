@@ -1,11 +1,9 @@
 package com.example.spring_course;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 
 @Configuration
+@PropertySource("classpath:application.properties")
 //@ComponentScan("com.example.spring_course")
 public class MyConfig {
     @Bean
