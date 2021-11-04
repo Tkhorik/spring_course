@@ -62,6 +62,10 @@ public class Employee {
         this.salary = salary;
     }
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "details_id")
+    private Detail empDetail;
+
     public Employee() {
     }
 
