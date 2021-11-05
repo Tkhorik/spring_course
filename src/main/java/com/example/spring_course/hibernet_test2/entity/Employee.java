@@ -66,6 +66,14 @@ public class Employee {
     @JoinColumn(name = "details_id")
     private Detail empDetail;
 
+    public Detail getEmpDetail() {
+        return empDetail;
+    }
+
+    public void setEmpDetail(Detail empDetail) {
+        this.empDetail = empDetail;
+    }
+
     public Employee() {
     }
 

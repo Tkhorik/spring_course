@@ -19,6 +19,12 @@ public class Detail {
     public Detail() {
     }
 
+    public Detail(String city, String phoneNumber, String email) {
+        this.city = city;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+
     public Detail(long id, String city, String phoneNumber, String email) {
         this.id = id;
         this.city = city;
