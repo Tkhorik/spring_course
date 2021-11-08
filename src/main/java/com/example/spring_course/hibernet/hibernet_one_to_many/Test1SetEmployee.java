@@ -1,7 +1,7 @@
-package com.example.spring_course.hibernet_test3.hibernet_test2;
+package com.example.spring_course.hibernet.hibernet_one_to_many;
 
-import com.example.spring_course.hibernet_test3.hibernet_test2.entity.Detail;
-import com.example.spring_course.hibernet_test3.hibernet_test2.entity.Employee;
+import com.example.spring_course.hibernet.hibernet_one_to_many.entity.Detail;
+import com.example.spring_course.hibernet.hibernet_one_to_many.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

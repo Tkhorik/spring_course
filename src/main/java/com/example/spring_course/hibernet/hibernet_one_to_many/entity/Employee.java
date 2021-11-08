@@ -1,4 +1,4 @@
-package com.example.spring_course.hibernet_test3.hibernet_test2.entity;
+package com.example.spring_course.hibernet.hibernet_one_to_many.entity;
 
 import javax.persistence.*;
 
