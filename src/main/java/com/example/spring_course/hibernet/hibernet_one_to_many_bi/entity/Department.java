@@ -18,16 +18,18 @@ public class Department {
     @Column(name = "min_salary")
     private int minSalary;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "department")
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH},
+            mappedBy = "department")
     private List<Employee> emps;
 
     public void addEmployeeToDepartment(Employee employee) {
-        if(emps == null){
+        if (emps == null) {
             emps = new ArrayList<>();
         }
         emps.add(employee);
         employee.setDepartment(this);
     }
+
     public Department() {
     }
 
@@ -36,7 +38,6 @@ public class Department {
         this.maxSalary = maxSalary;
         this.minSalary = minSalary;
     }
-
 
 
     public int getId() {
