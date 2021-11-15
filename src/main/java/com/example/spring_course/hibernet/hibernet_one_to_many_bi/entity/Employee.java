@@ -19,7 +19,7 @@ public class Employee {
     @Column(name = "salary")
     private int salary;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "department_id")
     private Department department;
 

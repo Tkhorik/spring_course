@@ -16,7 +16,7 @@ public class Employee {
     @Column(name = "surname")
     private String surname;
 
-    @Column(name = "department")
+    @Column(name = "department_id")
     private String department;
 
     @Column(name = "salary")
@@ -61,6 +61,7 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
 
     public Employee() {
     }
