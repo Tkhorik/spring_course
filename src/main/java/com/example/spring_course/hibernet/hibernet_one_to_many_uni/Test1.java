@@ -20,13 +20,13 @@ public class Test1 {
 
             session = factory.getCurrentSession();
             /*first*/
-            Department dep = new Department("ITw", 300, 1200);
+/*            Department dep = new Department("ITw", 300, 1200);
             Employee employee1 = new Employee("Test12Name", "test2Surname", 500);
             Employee employee2 = new Employee("Test22Name", "test3Surname", 1500);
 
             dep.addEmployeeToDepartment(employee1);
             dep.addEmployeeToDepartment(employee2);session.beginTransaction();
-            session.save(dep);
+            session.save(dep);*/
 
             /*second*/
 //            session.beginTransaction();
@@ -40,8 +40,9 @@ public class Test1 {
 //            System.out.println(employee.getDepartment());
 
             session.beginTransaction();
-            Employee emp = session.get(Employee.class,2);
-            session.delete(emp);
+            Department dep = session.get(Department.class,2);
+//            Employee emp = session.get(Employee.class,1); //delete for employee dows not delet his department there fore it in ui direction relation
+            session.delete(dep);// delete for department deletes all his employees
             session.getTransaction().commit();
 
 
